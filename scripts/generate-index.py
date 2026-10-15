@@ -24,16 +24,38 @@ END = "<!-- END SKILLS INDEX -->"
 CATEGORIES = [
     ("Agent operations", [
         "subagent-security-brief", "chief-of-staff", "agent-spawner",
-        "war-room", "war-room-doctrine",
+        "war-room", "war-room-doctrine", "fleet-doctrine",
+        "board-of-thirteen", "writers-war-room",
     ]),
     ("Research & verification", [
         "storm-research", "crucible", "entity-verification",
+        "demand-mining", "submission-gate", "paper-foundry",
+        "context7", "web-fetch", "phoenix", "rea",
     ]),
     ("Engineering systems", [
-        "sprint-engine", "tailscale-admin",
+        "sprint-engine", "eng-discipline", "prototype-sprint",
+        "tailscale-admin", "browser-skill", "blender",
+        "lambda-cloud", "ontology-floor",
     ]),
-    ("Shipping & media", [
-        "ios-ship", "appstore-connect", "video-learn", "voice-dna",
+    ("Business & growth", [
+        "brand-sprint", "city-map-strategy", "income-blueprint",
+        "media-company-marketing", "packaging-lab", "revenue-wedge",
+        "minerva", "typesafe-jev",
+    ]),
+    ("Creative & media", [
+        "creative-production", "atelier-character-sheet",
+        "cinematic-letter-video", "living-mesh-cinematic",
+        "signal-lab-cinematic", "video-learn", "voice-dna",
+    ]),
+    ("Shipping & distribution", [
+        "ios-ship", "appstore-connect",
+    ]),
+    ("Connectors & APIs", [
+        "cloudflare", "codemagic", "contrado", "elevenlabs", "fred",
+        "github", "google-ads", "groq", "huggingface", "nvidia",
+        "prodigi", "buttondown", "raisely", "sam-gov",
+        "simpler-grants-gov", "stripe", "telegram-bot", "zeffy",
+        "zenodo",
     ]),
 ]
 
