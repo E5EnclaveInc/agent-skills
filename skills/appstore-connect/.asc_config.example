@@ -1,0 +1,8 @@
+# App Store Connect API credentials for bin/asc.py (loaded at startup).
+# Copy this file to `.asc_config` in the skill root and fill in YOUR values.
+# Never commit a filled .asc_config. Find these values in
+# App Store Connect > Users and Access > Integrations.
+ASC_ISSUER_ID=<your-issuer-id-uuid>
+ASC_KEY_ID=<your-key-id>
+ASC_P8_PATH=/path/to/AuthKey_<your-key-id>.p8
+ASC_TEAM_ID=<your-team-id>
