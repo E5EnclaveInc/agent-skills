@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/claim_envelope.schema.json",
+  "title": "Claim Envelope",
+  "description": "What a fleet agent submits to the Verification Node (governance ceiling) before any output ships, enshrines, or spends. The node NEVER trusts the envelope; it verifies asserted_flows against evidence_refs (the Phantom-Aid gate).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claim", "author_did", "actuation_class", "asserted_flows"],
+  "properties": {
+    "claim": {
+      "type": "string",
+      "description": "The single assertion being submitted for verdict.",
+      "minLength": 1
+    },
+    "author_did": {
+      "type": "string",
+      "description": "Lattice identity of the submitting agent.",
+      "pattern": "^did:e5key:[A-Za-z0-9_-]+$"
+    },
+    "thread_ref": {
+      "type": "string",
+      "description": "Originating thread / run id for audit."
+    },
+    "grounding": {
+      "type": "array",
+      "description": "canonical_id(s) of the Grounding Records this claim leans on (the floor it stands on).",
+      "items": { "type": "string", "pattern": "^GR-[A-Za-z0-9._-]+$" },
+      "default": []
+    },
+    "actuation_class": {
+      "type": "string",
+      "description": "What the claim will DO. Drives the Trust-Rubric tier and the RED escalation.",
+      "enum": ["report", "draft", "enshrine", "publish", "deploy", "spend", "secret", "autonomy"]
+    },
+    "asserted_flows": {
+      "type": "object",
+      "description": "What the agent claims happened across the four SFI flows. Each is a claim to be verified, not accepted.",
+      "additionalProperties": false,
+      "required": ["capital", "resources", "information", "wellbeing"],
+      "properties": {
+        "capital": { "type": "string" },
+        "resources": { "type": "string" },
+        "information": { "type": "string" },
+        "wellbeing": { "type": "string" }
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "description": "Externally checkable pointers backing the asserted flows (git sha, endpoint URL, file hash, txn id). The node reads/probes these.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["flow", "ref"],
+        "properties": {
+          "flow": { "type": "string", "enum": ["capital", "resources", "information", "wellbeing"] },
+          "ref": { "type": "string", "description": "e.g. git://<sha>, https://…, shopify://…, sha256:…" },
+          "kind": { "type": "string", "enum": ["endpoint", "git", "hash", "txn", "file", "log"], "default": "endpoint" }
+        }
+      },
+      "default": []
+    },
+    "reversible": {
+      "type": "boolean",
+      "description": "Is the action reversible? Irreversible + high-blast forces RED escalation regardless of gate pass.",
+      "default": true
+    },
+    "ethical_terms": {
+      "type": "array",
+      "description": "Value/ethical terms the resolver REFUSED to ground. Surfaced here so the ceiling governs them (Abu), never the floor.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "submitted_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

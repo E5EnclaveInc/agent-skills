@@ -1,0 +1,14 @@
+# gitleaks configuration — E5EnclaveInc/agent-skills
+#
+# One narrow allowlist entry for a known false positive:
+# skills/appstore-connect/bin/asc.py builds PEM text around a private key
+# the USER supplies at runtime (via environment/config). The file holds the
+# PEM header/footer marker strings as formatting constants — no key material
+# exists anywhere in this repository (see SECURITY.md). Everything else
+# gitleaks finds, in the worktree or in history, still fails the scan.
+
+[[allowlists]]
+description = "PEM formatting constants in asc.py (formatting code, no key material)"
+condition = "AND"
+rules = ["private-key"]
+paths = ["skills/appstore-connect/bin/asc.py"]

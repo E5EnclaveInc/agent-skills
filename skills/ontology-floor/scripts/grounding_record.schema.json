@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/grounding_record.schema.json",
+  "title": "Grounding Record",
+  "description": "One entry in the Ontology Store (the epistemic floor). Binds a term to its math and a checkable proof. Physical/formal terms may be COMPUTED at the floor; ethical/value terms MUST NOT be grounded here and are routed to the governance ceiling (governance decides; the floor only grounds).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "term",
+    "canonical_id",
+    "tier",
+    "root_path",
+    "domain",
+    "sha256",
+    "verifiable"
+  ],
+  "properties": {
+    "term": {
+      "type": "string",
+      "description": "The natural-language token this record grounds (lowercased, canonical).",
+      "minLength": 1
+    },
+    "canonical_id": {
+      "type": "string",
+      "description": "Stable content-address for this record (e.g. GR-bayes-implicit-icl).",
+      "pattern": "^GR-[A-Za-z0-9._-]+$"
+    },
+    "aliases": {
+      "type": "array",
+      "description": "Other surface forms that resolve to this record.",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "tier": {
+      "type": "integer",
+      "description": "Expansion tier from the Tier-1 root (E). Tier 1 = the root equation itself.",
+      "minimum": 1
+    },
+    "root_path": {
+      "type": "array",
+      "description": "Trace from the Tier-1 root (E) down to this term. First element SHOULD be 'E'.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "domain": {
+      "type": "string",
+      "description": "Grounding class. 'physical' and 'formal' may be computed at the floor. 'ethical' MUST be refused by the resolver and governed at the ceiling.",
+      "enum": [
+        "physical",
+        "formal",
+        "ethical"
+      ]
+    },
+    "math": {
+      "type": "string",
+      "description": "The canonical mathematical statement (LaTeX or plain). Required for physical/formal; forbidden for ethical."
+    },
+    "proof_ref": {
+      "type": "string",
+      "description": "Pointer to the derivation/theorem bytes (e.g. r2://ontology-floor/proofs/icl-tv-bound.tex).",
+      "format": "uri-reference"
+    },
+    "proof_kind": {
+      "type": "string",
+      "enum": [
+        "derivation",
+        "theorem",
+        "definition",
+        "empirical",
+        "none"
+      ],
+      "default": "none"
+    },
+    "provenance": {
+      "type": "string",
+      "description": "Ingestion source (e.g. arXiv:2111.02080). A record without provenance is a phantom."
+    },
+    "ingested_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sha256": {
+      "type": "string",
+      "description": "Hash of the canonical record bytes (content-address integrity).",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "verifiable": {
+      "type": "boolean",
+      "description": "Derived. True iff status == 'verified' (both ingestion gates passed)."
+    },
+    "status": {
+      "type": "string",
+      "description": "Lifecycle state set by the ingestion gates.",
+      "enum": [
+        "ingested",
+        "verified",
+        "quarantined",
+        "governed"
+      ],
+      "default": "ingested"
+    },
+    "corroboration": {
+      "type": "array",
+      "description": "Non-LLM signals supporting this record's structural placement (source text span, external KG match, second-model agreement).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source",
+          "kind"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "source_text",
+              "external_kg",
+              "second_model",
+              "human",
+              "llm"
+            ]
+          }
+        }
+      },
+      "default": []
+    },
+    "structure": {
+      "type": "object",
+      "description": "Result of GATE S (symbolic structural validation). Deterministic; no LLM.",
+      "additionalProperties": true,
+      "properties": {
+        "dag_ok": {
+          "type": "boolean"
+        },
+        "tier_consistent": {
+          "type": "boolean"
+        },
+        "acyclic": {
+          "type": "boolean"
+        },
+        "corroboration_signals": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "PASS",
+            "FAIL"
+          ]
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "faithfulness": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Result of GATE F (word->math faithfulness; contrastive + roundtrip drift detection). Null if GATE S failed first.",
+      "additionalProperties": true,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "roundtrip_sim": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "beats_near_misses": {
+          "type": "boolean"
+        },
+        "symbols_grounded": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "ungrounded_symbols": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "method": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "PASS",
+            "DRIFT",
+            "FAIL"
+          ]
+        }
+      }
+    },
+    "quarantine_reason": {
+      "type": "string",
+      "description": "Present iff status == 'quarantined': the failing gate(s) and what must change."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "domain": {
+            "const": "ethical"
+          }
+        }
+      },
+      "then": {
+        "description": "Ethical terms carry no math and are never floor-grounded.",
+        "properties": {
+          "math": false
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "domain": {
+            "enum": [
+              "physical",
+              "formal"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "math",
+          "proof_kind"
+        ]
+      }
+    }
+  ]
+}

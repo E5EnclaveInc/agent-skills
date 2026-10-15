@@ -10,7 +10,43 @@
       "name": "appstore-connect",
       "description": "Use App Store Connect when working with Apple's App Store Connect API: ES256-JWT REST client for TestFlight distribution, build compliance, beta groups, testers, and external review submission.",
       "path": "skills/appstore-connect",
-      "category": "Shipping & media"
+      "category": "Shipping & distribution"
+    },
+    {
+      "name": "atelier-character-sheet",
+      "description": "Turn an outfit reference image into a professional Sovereign Couture fashion character sheet: AI-reconstructed garment visualization on black, with crisp HTML-composed callouts, material crops, color palette, and editorial notes written through Black American fashion lineage. Trigger when the user wants a character sheet, design spec board, or outfit breakdown for a garment.",
+      "path": "skills/atelier-character-sheet",
+      "category": "Creative & media"
+    },
+    {
+      "name": "blender",
+      "description": "Use for 3D scene work in Blender — inspect the scene, run bpy scripts, take viewport screenshots, export scenes. Headless Blender under an isolated unprivileged system account; explicit task-only invocation.",
+      "path": "skills/blender",
+      "category": "Engineering systems"
+    },
+    {
+      "name": "board-of-thirteen",
+      "description": "Convene a virtual board of thirteen Black American thought leaders (Douglass through Coates) as analytical perspectives to deliberate a research, thesis, remedy-design, or evidentiary question and produce a majority position with minority notes. Use when a question needs deliberation across the generations of the lineage.",
+      "path": "skills/board-of-thirteen",
+      "category": "Agent operations"
+    },
+    {
+      "name": "brand-sprint",
+      "description": "Run a time-boxed naming + visual-direction sprint for a new product or company: generate candidate names, score the best by domain, email format, and company-and-product brand fit, adjudicate by consensus, then ship the visual direction (voice, hero copy, CTAs, palette, logo directions, implementation-ready design brief). Use when a build needs its identity before launch. Differs from a design task by the hard timebox and the scored, decided-not-debated naming.",
+      "path": "skills/brand-sprint",
+      "category": "Business & growth"
+    },
+    {
+      "name": "browser-skill",
+      "description": "Use when the user asks to automate their logged-in Chromium browser: visit and read pages, fill forms, scrape data, click through flows, regression-test a PR's UI, validate a deployed page, or operate a tab they identify. Requires the bsk CLI and browser extension.",
+      "path": "skills/browser-skill",
+      "category": "Engineering systems"
+    },
+    {
+      "name": "buttondown",
+      "description": "Manage a Buttondown newsletter through API v1: verify the key, list and create draft emails from Markdown files, and import/export subscribers as CSV. Drafts only — sending stays a human action. Use when a task involves Buttondown or its newsletter API.",
+      "path": "skills/buttondown",
+      "category": "Connectors & APIs"
     },
     {
       "name": "chief-of-staff",
@@ -19,10 +55,70 @@
       "category": "Agent operations"
     },
     {
+      "name": "cinematic-letter-video",
+      "description": "Build a 60-second cinematic documentary-evidence video: a silent AI-presenter body, a cloned voiceover, and the subject's own emails/letters composed as evidence cards in an HTML timeline, rendered to MP4 via HyperFrames. Use when a documented outcome — a dispute, a refusal, a paper trail — needs a video where the evidence is the hero: offers on light cards, denials on dark, red only on refusal beats, no faces.",
+      "path": "skills/cinematic-letter-video",
+      "category": "Creative & media"
+    },
+    {
+      "name": "city-map-strategy",
+      "description": "Use for content strategy and planning a marketing campaign at the quarterly level: build a city-map (Grand Central anchor, max 3 quarterly destinations, signal lines, passengers, format stops, cadence timetable) that works backwards from goals instead of content-first.",
+      "path": "skills/city-map-strategy",
+      "category": "Business & growth"
+    },
+    {
+      "name": "cloudflare",
+      "description": "Drive the Cloudflare API v4 from the command line: zones, DNS, Workers, R2 object get/put, and any other endpoint, with scoped-token and legacy global-key auth lanes. Use when a task involves Cloudflare or its API.",
+      "path": "skills/cloudflare",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "codemagic",
+      "description": "Drive the Codemagic CI API from the command line: list apps, trigger and poll builds, and inspect build status. Use when a task involves Codemagic builds, apps, or workflows, or asks about Codemagic or its API.",
+      "path": "skills/codemagic",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "context7",
+      "description": "Use when you need version-accurate library or API documentation for build work — Cloudflare Workers, iOS, Codemagic, Python packages. Resolves a library name to a Context7 ID, then fetches version-pinned docs.",
+      "path": "skills/context7",
+      "category": "Research & verification"
+    },
+    {
+      "name": "contrado",
+      "description": "Work with the Contrado Helix print-on-demand API: browse stores and products, map variants, create and track orders. Use when a task involves Contrado, Helix, or print-on-demand fulfilment through Contrado.",
+      "path": "skills/contrado",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "creative-production",
+      "description": "Produce finished creative assets from reference images: a group portrait with a mandatory face-quality pass, video animation of the verified still, and square icon artwork. Use when a user wants character art, campaign creatives, logos, or animated clips from their own reference images — never for the agent platform's own avatar/self-image pipeline.",
+      "path": "skills/creative-production",
+      "category": "Creative & media"
+    },
+    {
       "name": "crucible",
       "description": "Use Crucible when a sourced deliverable must be proven before publishing: door-check every URL, mechanically verify file-size and PDF page-count claims, ground dollar/date/attribution figures against live sources, and emit a gated Verification Ledger.",
       "path": "skills/crucible",
       "category": "Research & verification"
+    },
+    {
+      "name": "demand-mining",
+      "description": "Mine public posts and conversations for problems people want agents to solve; rank the themes by willingness-to-pay and speed-to-launch; attach each to an identifiable buyer, a contact path, and a price band. Use for demand research before building anything. Differs from storm-research (literature-first, multi-perspective) by being demand-signal-first and buyer-attached.",
+      "path": "skills/demand-mining",
+      "category": "Research & verification"
+    },
+    {
+      "name": "elevenlabs",
+      "description": "Drive the ElevenLabs API: text-to-speech, speech-to-text, sound effects, music, voices, dubbing, and usage — with content-hash idempotency, backoff, and quota preflight built in. Use when a task involves ElevenLabs, voice generation, or its API.",
+      "path": "skills/elevenlabs",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "eng-discipline",
+      "description": "Install the minimum rigorous engineering discipline for a sprint build: the tests that guard the contract, PR hygiene, issue-to-ship loops, and a five-line shipping policy. Use when starting a short build where process must be light but real. Differs from sprint-engine (the task-graph runner) by being the discipline layer inside a build, and from full SDLC process by the explicit strip-to-minimum for a sprint.",
+      "path": "skills/eng-discipline",
+      "category": "Engineering systems"
     },
     {
       "name": "entity-verification",
@@ -31,10 +127,154 @@
       "category": "Research & verification"
     },
     {
+      "name": "fleet-doctrine",
+      "description": "A standing decision doctrine for agent teams — proxy math: a 7-step decision function that replaces asking the principal (reversible → act and report; moves money, state, or publishes → stage for one-word approval; settled by the filed record → follow the record), plus autonomy, gating, and next-move rules and a 10-dimension compliance rubric. Load whenever an agent must decide whether to act, ask, or stage for approval.",
+      "path": "skills/fleet-doctrine",
+      "category": "Agent operations"
+    },
+    {
+      "name": "fred",
+      "description": "Query the FRED (Federal Reserve Bank of St. Louis) economic data API: fetch series observations and metadata — interest rates, inflation, employment, and thousands of other series. Use when a task needs FRED data or mentions FRED series IDs.",
+      "path": "skills/fred",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "github",
+      "description": "Call the GitHub REST API from the command line: repos, contents, issues, pull requests, and any other endpoint. Use when a task involves GitHub or its API and a small scriptable client is handier than a full integration.",
+      "path": "skills/github",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "google-ads",
+      "description": "Drive a Google Ads account through the Google Ads API: GAQL search, campaign/ad-group/ad/keyword mutations, and ad-strength audits. Use when a task involves Google Ads, Ad Grants, or the Google Ads API.",
+      "path": "skills/google-ads",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "groq",
+      "description": "Call the GroqCloud API (OpenAI-compatible): list models and run chat completions at Groq speed. Use when a task involves Groq, GroqCloud, or its API.",
+      "path": "skills/groq",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "huggingface",
+      "description": "Run chat completions through Hugging Face's hosted inference router (OpenAI-compatible), including vision models via image input and SSE streaming. Use when a task needs a Hugging Face model call, an independent second-opinion model lane, or HF Inference.",
+      "path": "skills/huggingface",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "income-blueprint",
+      "description": "Run the five-step AI income-discovery workshop: super-prompt onboarding, personal intelligence blueprint (resume read as business advisor + gap interview), story repository, ranked income ideas with 90-day probabilities, and a day-one market test. Use when designing a money-making workshop or cohort, validating an offer before building it, or coaching someone from idea to first contact.",
+      "path": "skills/income-blueprint",
+      "category": "Business & growth"
+    },
+    {
       "name": "ios-ship",
       "description": "Use ios-ship to get any app onto a registered iPhone with zero dashboard steps: Codemagic builds, signing groups, the verify_ipa.py ship gate, OTA install pages, and the programmatic App Store submission pipeline.",
       "path": "skills/ios-ship",
-      "category": "Shipping & media"
+      "category": "Shipping & distribution"
+    },
+    {
+      "name": "lambda-cloud",
+      "description": "Operate Lambda Cloud GPU instances from the CLI: list instance types with live pricing and regional capacity, launch/terminate/restart behind a confirm gate, manage SSH keys and filesystems. Use for evaluation, prototype, or burst GPU work. Credential via the LAMBDA_API_KEY environment variable or ~/.lambda/api_key (mode 600); every mutating command requires --confirm.",
+      "path": "skills/lambda-cloud",
+      "category": "Engineering systems"
+    },
+    {
+      "name": "living-mesh-cinematic",
+      "description": "Make a page cinematic with a living nodal-network simulation — breathing nodes, pulses routing along edges, circuit traces lighting as current passes, and periodic node failure/rerouting/recovery that teaches the system's story. Use when a page needs continuous ambient motion that demonstrates how something behaves (failover, routing, resilience) rather than a play-once film replay.",
+      "path": "skills/living-mesh-cinematic",
+      "category": "Creative & media"
+    },
+    {
+      "name": "media-company-marketing",
+      "description": "Use for content strategy, social media growth, and newsletter growth: plan a marketing campaign like a media company — entertainment-first series, the attention→connection→trust funnel, pre-committed metrics, granular audience targeting, and judging viral content correctly.",
+      "path": "skills/media-company-marketing",
+      "category": "Business & growth"
+    },
+    {
+      "name": "minerva",
+      "description": "Use Minerva for a paper-first markets desk: market data and execution across Kalshi, Polymarket, and Alpaca paper accounts, with hard guardrails, red-gated live orders, and keyless options-data backtest tooling. Live orders stay disabled unless the operator arms them per session.",
+      "path": "skills/minerva",
+      "category": "Business & growth"
+    },
+    {
+      "name": "nvidia",
+      "description": "Run chat completions against NVIDIA NIM hosted models (integrate.api.nvidia.com, OpenAI-compatible), with reasoning-effort control, SSE streaming, and catalog listing. Use when a task involves NVIDIA NIM, build.nvidia.com models, or an nvapi key.",
+      "path": "skills/nvidia",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "ontology-floor",
+      "description": "Ground words in math (term → formula + checkable proof) to cut hallucination on hard, rare formalisms: a resolve() lookup, deterministic structural + faithfulness ingestion gates, a self-updating ingest worker, and a Cloudflare R2/D1/Vectorize store layer. Use when a system must compute specialized terms instead of recalling them — and must refuse value/ethical terms rather than ground them.",
+      "path": "skills/ontology-floor",
+      "category": "Engineering systems"
+    },
+    {
+      "name": "packaging-lab",
+      "description": "Use for packaging: pre-test titles and thumbnails before publishing, edit for retention first, run outreach as a numbers game, and hold non-negotiable publishing slots — the practical, volume-based discipline for earning viral content without guessing.",
+      "path": "skills/packaging-lab",
+      "category": "Business & growth"
+    },
+    {
+      "name": "paper-foundry",
+      "description": "Draft and restructure scholarly papers using structural argumentation recipes distilled from the most-cited works in two lanes: reparations economics and Black Atlantic / African diaspora history. Use when drafting a new paper, restructuring a weak one, or strengthening an argument's architecture — 'frame this paper's gap', 'restructure this argument', 'how would the best papers in this lane handle this objection'. The argumentation layer; the submission-gate skill is the verification layer.",
+      "path": "skills/paper-foundry",
+      "category": "Research & verification"
+    },
+    {
+      "name": "phoenix",
+      "description": "Use for LLM-observability pilot work — start the local Phoenix server, run the scripted OTel pilot, query traces. Localhost-only, pilot-scoped, short-lived runs.",
+      "path": "skills/phoenix",
+      "category": "Research & verification"
+    },
+    {
+      "name": "prodigi",
+      "description": "Work with the Prodigi print-on-demand API v4: products, quotes, and orders — sandbox by default, live only on request. Use when a task involves Prodigi or its print API.",
+      "path": "skills/prodigi",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "prototype-sprint",
+      "description": "Ship the thinnest thing that proves the signal today — landing page plus signup, no database — then hand production engineering a clean handoff protocol instead of a pile of prototype. Use when speed-to-signal beats completeness. Differs from a full build by the disposable-first contract and the explicit prototype-to-production handoff.",
+      "path": "skills/prototype-sprint",
+      "category": "Engineering systems"
+    },
+    {
+      "name": "raisely",
+      "description": "Work with the Raisely fundraising API: campaigns, profiles, donations, teams, and registrations. The campaign key is admin-equivalent, so money-moving calls need explicit confirmation. Use when a task involves Raisely or its API.",
+      "path": "skills/raisely",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "rea",
+      "description": "Use REA (Reverse Engineer Anything) to investigate shipped binaries, apps, and packages: native via Ghidra, JS/Electron static analysis, process capture on owned builds only, and the evidence/ledger contracts. Adopted under per-lane policy gates — read POLICY.md before first use; third-party analysis is not authorized.",
+      "path": "skills/rea",
+      "category": "Research & verification"
+    },
+    {
+      "name": "revenue-wedge",
+      "description": "Design the fastest path from current assets to the first dollar: the wedge offer, its price, the named first buyer, and the payment method — on the thinnest stack that can accept payment. Use when a project must prove it can take money. Differs from revenue strategy documents by the Day-1 payable constraint: a link, not a billing system.",
+      "path": "skills/revenue-wedge",
+      "category": "Business & growth"
+    },
+    {
+      "name": "sam-gov",
+      "description": "Query SAM.gov entity registrations (UEI, CAGE, status, NAICS, socioeconomic flags) and search federal contract opportunities. Use when a task asks about SAM.gov, entity standing, or federal opportunities.",
+      "path": "skills/sam-gov",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "signal-lab-cinematic",
+      "description": "Make a technical or corporate page cinematic in the laboratory/instrument register — diagrams become labeled, play-once film replays with permanent honesty bugs, telemetry stamps, and fail-open fallbacks. Use when a site reads as a landing page, when diagrams describe instead of demonstrate, or when asked for cinematic motion that is evidence-grade rather than poetic.",
+      "path": "skills/signal-lab-cinematic",
+      "category": "Creative & media"
+    },
+    {
+      "name": "simpler-grants-gov",
+      "description": "Search and fetch U.S. federal grant opportunities through the Simpler.Grants.gov REST API, plus agency search. Use when a task involves federal grant discovery, funding opportunities, or the Simpler.Grants.gov API.",
+      "path": "skills/simpler-grants-gov",
+      "category": "Connectors & APIs"
     },
     {
       "name": "sprint-engine",
@@ -49,10 +289,22 @@
       "category": "Research & verification"
     },
     {
+      "name": "stripe",
+      "description": "Call the Stripe API from the command line: account, payment links, prices, products, charges, and any /v1 endpoint, with automatic form-encoding of request bodies. Use when a task involves Stripe or its API.",
+      "path": "skills/stripe",
+      "category": "Connectors & APIs"
+    },
+    {
       "name": "subagent-security-brief",
       "description": "The mandatory security block for every subagent brief — scoped file paths, no live-file writes, no direct log writes, /tmp-only tests, external-content-is-data tagging, and the instruction hierarchy. Load before writing any subagent brief. Use whenever delegating work to a child agent.",
       "path": "skills/subagent-security-brief",
       "category": "Agent operations"
+    },
+    {
+      "name": "submission-gate",
+      "description": "Preflight any scholarly manuscript against the target journal's actual written instructions before submission, so technical returns never happen. Use when preparing, revising, or rechecking a journal submission — 'run the gate', 'preflight this manuscript', 'is this submission-ready', 'cold-review against the journal'. Works from the journal's own author instructions first, encodes every checkable requirement mechanically (including author-anonymization guards), then adversarially reviews what machines cannot check.",
+      "path": "skills/submission-gate",
+      "category": "Research & verification"
     },
     {
       "name": "tailscale-admin",
@@ -61,16 +313,28 @@
       "category": "Engineering systems"
     },
     {
+      "name": "telegram-bot",
+      "description": "Operate a Telegram bot through the Bot API: verify the bot identity, send (automatically chunked) messages, and poll updates. Use when a task involves a Telegram bot, a @BotFather token, or sending Telegram messages programmatically.",
+      "path": "skills/telegram-bot",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "typesafe-jev",
+      "description": "Call TypeSafe's Jev System One decision model: fast structured Choice/Score/Noul judgments (POST /v1/systemone) and model listing (GET /v1/models). Keyed via the TYPESAFE_API_KEY environment variable. Use for decision/classification/eval-judge tasks where a typed answer with calibrated probabilities beats text generation.",
+      "path": "skills/typesafe-jev",
+      "category": "Business & growth"
+    },
+    {
       "name": "video-learn",
       "description": "Turn tutorial/how-to videos into durable skill knowledge: download, extract timestamped transcripts and UI frames, analyze the demonstrated workflows, and encode them as click-level documentation. Adapted from the public MIT-licensed claude-watch pattern (yt-dlp + ffmpeg + captions + multimodal analysis).",
       "path": "skills/video-learn",
-      "category": "Shipping & media"
+      "category": "Creative & media"
     },
     {
       "name": "voice-dna",
       "description": "Build a named, recallable writing-style profile (Voice DNA) from three writing samples, saved as ghostwriter rules for a person, brand, or client. Use when ghostwriting, keeping AI output out of AI-slop territory, or maintaining one voice per persona/brand/client.",
       "path": "skills/voice-dna",
-      "category": "Shipping & media"
+      "category": "Creative & media"
     },
     {
       "name": "war-room",
@@ -83,6 +347,30 @@
       "description": "Standing discipline for every war room — ontology-floor term grounding before deliberation, ranked-choice adjudication for decisions. Load at the start of any war-room commission.",
       "path": "skills/war-room-doctrine",
       "category": "Agent operations"
+    },
+    {
+      "name": "web-fetch",
+      "description": "Use when a subagent needs to read a public web page as markdown without the live-browser path. Fetches a URL and returns markdown (chunked reads supported). Public internet only — internal/private IPs are blocked at the connection layer by a bundled egress proxy.",
+      "path": "skills/web-fetch",
+      "category": "Research & verification"
+    },
+    {
+      "name": "writers-war-room",
+      "description": "Convene a Pixar-Braintrust writers room to perfect source material into a finished multi-voice audiobook script — named seats with editorial gates, rank-choice seating, research plus leading-edge recon, ElevenLabs audiobook craft, crafted-EPUB finish. Use when a transcript or draft must become a publishable audio script.",
+      "path": "skills/writers-war-room",
+      "category": "Agent operations"
+    },
+    {
+      "name": "zeffy",
+      "description": "Read the Zeffy API (read-only): payments, contacts, and campaigns with cursor pagination, for reconciliation and reporting. Use when a task involves Zeffy or its API.",
+      "path": "skills/zeffy",
+      "category": "Connectors & APIs"
+    },
+    {
+      "name": "zenodo",
+      "description": "Work with the Zenodo API: search and read records, manage draft depositions, upload files via bucket URLs, update metadata, create new versions, and publish. Use when a task involves Zenodo, DOIs, or depositing research outputs.",
+      "path": "skills/zenodo",
+      "category": "Connectors & APIs"
     }
   ]
 }

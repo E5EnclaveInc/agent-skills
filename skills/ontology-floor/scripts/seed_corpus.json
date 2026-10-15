@@ -1,0 +1,297 @@
+[
+  {
+    "term": "energy",
+    "canonical_id": "GR-energy-mass-equivalence",
+    "aliases": [
+      "mass-energy",
+      "e=mc2"
+    ],
+    "tier": 1,
+    "root_path": [
+      "E"
+    ],
+    "domain": "physical",
+    "math": "E = mc^2",
+    "proof_ref": "r2://ontology-floor/proofs/mass-energy-equivalence.tex",
+    "proof_kind": "derivation",
+    "provenance": "Einstein 1905, Ann. Phys. 18:639",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000001",
+    "verifiable": true
+  },
+  {
+    "term": "water",
+    "canonical_id": "GR-water-molecule",
+    "aliases": [
+      "h2o"
+    ],
+    "tier": 3,
+    "root_path": [
+      "E",
+      "matter",
+      "molecule"
+    ],
+    "domain": "physical",
+    "math": "H2O",
+    "proof_ref": "r2://ontology-floor/proofs/water-composition.tex",
+    "proof_kind": "definition",
+    "provenance": "IUPAC nomenclature",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000002",
+    "verifiable": true
+  },
+  {
+    "term": "bayes",
+    "canonical_id": "GR-bayes-theorem",
+    "aliases": [
+      "bayes theorem",
+      "bayes rule",
+      "posterior"
+    ],
+    "tier": 3,
+    "root_path": [
+      "E",
+      "information",
+      "posterior"
+    ],
+    "domain": "formal",
+    "math": "P(H|E) = P(E|H) P(H) / P(E)",
+    "proof_ref": "r2://ontology-floor/proofs/bayes-theorem.tex",
+    "proof_kind": "theorem",
+    "provenance": "Bayes 1763",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000003",
+    "verifiable": true
+  },
+  {
+    "term": "in_context_learning",
+    "canonical_id": "GR-bayes-implicit-icl",
+    "aliases": [
+      "icl",
+      "in-context learning",
+      "transformers_learn_in_context"
+    ],
+    "tier": 4,
+    "root_path": [
+      "E",
+      "information",
+      "posterior",
+      "icl"
+    ],
+    "domain": "formal",
+    "math": "||Tv - u||_1 = 2 TV(Prompt(.) || sum_i v_i p(.|Delim=i, theta*)) < Delta/2",
+    "proof_ref": "r2://ontology-floor/proofs/icl-tv-bound.tex",
+    "proof_kind": "derivation",
+    "provenance": "arXiv:2111.02080",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000004",
+    "verifiable": true
+  },
+  {
+    "term": "cantor_set",
+    "canonical_id": "GR-cantor-set",
+    "aliases": [
+      "cantor",
+      "god_cantor_set"
+    ],
+    "tier": 3,
+    "root_path": [
+      "E",
+      "infinity",
+      "cardinality"
+    ],
+    "domain": "formal",
+    "math": "C = [0,1] \\ union_{n} open middle-thirds ; |C| = 2^{aleph_0}, measure(C) = 0",
+    "proof_ref": "r2://ontology-floor/proofs/cantor-set.tex",
+    "proof_kind": "theorem",
+    "provenance": "Cantor 1883",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000005",
+    "verifiable": true
+  },
+  {
+    "term": "shannon_entropy",
+    "canonical_id": "GR-shannon-entropy",
+    "aliases": [
+      "entropy",
+      "information entropy"
+    ],
+    "tier": 3,
+    "root_path": [
+      "E",
+      "information",
+      "uncertainty"
+    ],
+    "domain": "formal",
+    "math": "H(X) = - sum_i p(x_i) log p(x_i)",
+    "proof_ref": "r2://ontology-floor/proofs/shannon-entropy.tex",
+    "proof_kind": "definition",
+    "provenance": "Shannon 1948",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000006",
+    "verifiable": true
+  },
+  {
+    "term": "love",
+    "canonical_id": "GR-love-ETHICAL",
+    "aliases": [
+      "god_love_e"
+    ],
+    "tier": 0,
+    "root_path": [
+      "E"
+    ],
+    "domain": "ethical",
+    "proof_ref": "",
+    "proof_kind": "none",
+    "provenance": "value term — governed, not grounded",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000e1",
+    "verifiable": false
+  },
+  {
+    "term": "honesty",
+    "canonical_id": "GR-honesty-ETHICAL",
+    "aliases": [
+      "god_honest_death",
+      "honest"
+    ],
+    "tier": 0,
+    "root_path": [
+      "E"
+    ],
+    "domain": "ethical",
+    "proof_ref": "",
+    "proof_kind": "none",
+    "provenance": "value term — governed, not grounded",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000e2",
+    "verifiable": false
+  },
+  {
+    "term": "civilizational_health",
+    "canonical_id": "GR-civhealth-ETHICAL",
+    "aliases": [
+      "god_civ_health",
+      "civ health"
+    ],
+    "tier": 0,
+    "root_path": [
+      "E"
+    ],
+    "domain": "ethical",
+    "proof_ref": "",
+    "proof_kind": "none",
+    "provenance": "value term — governed, not grounded",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000e3",
+    "verifiable": false
+  },
+  {
+    "term": "constitutional_classifiers",
+    "canonical_id": "GR-constitutional-classifiers-plus",
+    "aliases": [
+      "constitutional_classifiers_pp",
+      "cc++",
+      "exchange_classifier",
+      "jailbreak_defense_cascade"
+    ],
+    "tier": 3,
+    "root_path": [
+      "E",
+      "information",
+      "safety"
+    ],
+    "domain": "formal",
+    "math": "screen(x) := probe(x) > tau  ->  escalate to ensemble E(x) for the ~5.5% flagged ;  ~40x cost reduction vs baseline exchange classifier ;  0.05% refusal on production traffic",
+    "proof_ref": "https://arxiv.org/abs/2601.04603",
+    "proof_kind": "empirical",
+    "provenance": "arXiv:2601.04603 (Anthropic, Jan 2026)",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000c1",
+    "verifiable": true
+  },
+  {
+    "term": "agentive_agent_model",
+    "canonical_id": "GR-agentive-gic",
+    "aliases": [
+      "gic",
+      "goal_identity_configurator",
+      "agentic_vs_agentive",
+      "critique_of_agent_model"
+    ],
+    "tier": 3,
+    "root_path": [
+      "E",
+      "information",
+      "agency"
+    ],
+    "domain": "formal",
+    "math": "agentive(S) := internalized(goal, identity, decision, self_regulation, learning)  (endogenous, not scaffolded) ;  GIC := <hier_goal_decomp, identity_evolution, world_model_simulation, learned_self_regulation, self_directed_learning>",
+    "proof_ref": "https://arxiv.org/abs/2606.23991",
+    "proof_kind": "definition",
+    "provenance": "arXiv:2606.23991 (Xing, Deng, Hou; MBZUAI + CMU, Jun 2026)",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000a6",
+    "verifiable": true
+  },
+  {
+    "term": "pythagorean_theorem",
+    "canonical_id": "GR-pythagorean",
+    "aliases": ["pythagoras"],
+    "tier": 3,
+    "root_path": ["E", "formal", "geometry"],
+    "domain": "formal",
+    "math": "a^2 + b^2 = c^2  (c = hypotenuse of a right triangle)",
+    "proof_ref": "r2://ontology-floor/proofs/pythagoras.tex",
+    "proof_kind": "theorem",
+    "provenance": "Euclid, Elements I.47",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000b1",
+    "verifiable": true
+  },
+  {
+    "term": "softmax",
+    "canonical_id": "GR-softmax",
+    "aliases": ["softmax function"],
+    "tier": 3,
+    "root_path": ["E", "information", "normalization"],
+    "domain": "formal",
+    "math": "softmax(z)_i = exp(z_i) / sum_j exp(z_j)",
+    "proof_ref": "r2://ontology-floor/proofs/softmax.tex",
+    "proof_kind": "definition",
+    "provenance": "Bridle 1990",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000b2",
+    "verifiable": true
+  },
+  {
+    "term": "standard_deviation",
+    "canonical_id": "GR-stddev",
+    "aliases": ["population standard deviation", "stddev"],
+    "tier": 3,
+    "root_path": ["E", "information", "dispersion"],
+    "domain": "formal",
+    "math": "sigma = sqrt( (1/N) sum_i (x_i - mu)^2 )   (population)",
+    "proof_ref": "r2://ontology-floor/proofs/stddev.tex",
+    "proof_kind": "definition",
+    "provenance": "classical statistics",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000b3",
+    "verifiable": true
+  },
+  {
+    "term": "quadratic_formula",
+    "canonical_id": "GR-quadratic",
+    "aliases": ["quadratic roots"],
+    "tier": 3,
+    "root_path": ["E", "formal", "algebra"],
+    "domain": "formal",
+    "math": "x = ( -b +/- sqrt(b^2 - 4ac) ) / (2a)   for ax^2 + bx + c = 0",
+    "proof_ref": "r2://ontology-floor/proofs/quadratic.tex",
+    "proof_kind": "theorem",
+    "provenance": "classical algebra",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000b4",
+    "verifiable": true
+  },
+  {
+    "term": "circle_area",
+    "canonical_id": "GR-circle-area",
+    "aliases": ["area of a circle"],
+    "tier": 3,
+    "root_path": ["E", "formal", "geometry"],
+    "domain": "formal",
+    "math": "A = pi * r^2",
+    "proof_ref": "r2://ontology-floor/proofs/circle-area.tex",
+    "proof_kind": "theorem",
+    "provenance": "Archimedes",
+    "sha256": "00000000000000000000000000000000000000000000000000000000000000b5",
+    "verifiable": true
+  }
+]

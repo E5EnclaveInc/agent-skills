@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/coherence_verdict.schema.json",
+  "title": "Coherence Verdict",
+  "description": "What the Verification Node returns for a Claim Envelope. The down-interface of the composed stack. GOOD ships; NOT_GOOD locks and requeues with the failing gate attached.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["verdict", "gates", "sfi", "four_houses", "escalation"],
+  "properties": {
+    "verdict": {
+      "type": "string",
+      "enum": ["GOOD", "NOT_GOOD"]
+    },
+    "gates": {
+      "type": "object",
+      "description": "Pass/fail per Vizier review gate, in order.",
+      "additionalProperties": false,
+      "required": ["abu_heru", "sfi", "zero_entropy", "phantom_aid", "four_houses", "visual_heka"],
+      "properties": {
+        "abu_heru":    { "$ref": "#/$defs/gate" },
+        "sfi":         { "$ref": "#/$defs/gate" },
+        "zero_entropy":{ "$ref": "#/$defs/gate" },
+        "phantom_aid": { "$ref": "#/$defs/gate" },
+        "four_houses": { "$ref": "#/$defs/gate" },
+        "visual_heka": { "$ref": "#/$defs/gate" }
+      }
+    },
+    "sfi": {
+      "type": "object",
+      "description": "Systemic Flow Index: the four flows scored 0..1 plus decoupling alerts.",
+      "additionalProperties": false,
+      "required": ["capital", "resources", "information", "wellbeing", "coherence_score", "decoupling_alerts"],
+      "properties": {
+        "capital":     { "type": "number", "minimum": 0, "maximum": 1 },
+        "resources":   { "type": "number", "minimum": 0, "maximum": 1 },
+        "information": { "type": "number", "minimum": 0, "maximum": 1 },
+        "wellbeing":   { "type": "number", "minimum": 0, "maximum": 1 },
+        "coherence_score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "decoupling_alerts": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "four_houses": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["baboon", "ibis", "lion", "ram", "weakest"],
+      "properties": {
+        "baboon": { "type": "number", "minimum": 0, "maximum": 1, "description": "Truth/data" },
+        "ibis":   { "type": "number", "minimum": 0, "maximum": 1, "description": "Structure" },
+        "lion":   { "type": "number", "minimum": 0, "maximum": 1, "description": "Strategy" },
+        "ram":    { "type": "number", "minimum": 0, "maximum": 1, "description": "Defense" },
+        "weakest":{ "type": "string", "enum": ["baboon", "ibis", "lion", "ram"] }
+      }
+    },
+    "decoherence_found": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "escalation": {
+      "type": "string",
+      "description": "GREEN = ship on board word; AMBER = door-verify artifact before enshrine; RED = direct human seal required.",
+      "enum": ["GREEN", "AMBER", "RED"]
+    },
+    "requeue_reason": {
+      "type": "string",
+      "description": "Present iff verdict is NOT_GOOD: the failing gate + what must change (the gutter-loop instruction)."
+    },
+    "verified_at": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pass"],
+      "properties": {
+        "pass": { "type": "boolean" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}
