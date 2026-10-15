@@ -1,7 +1,7 @@
 # Contributing — the skill authoring standard
 
 How skills in this repo are authored, edited, reviewed, and debugged. Read it before
-creating or changing any skill. New skills start from [`template/SKILL.md`](template/SKILL.md).
+creating or changing any skill. New skills start from [`template/skill-template.md`](template/skill-template.md).
 
 > Methodology adapted from David Ondrej's `effective-agent-skills` (Agent Skills, MIT).
 > The craft is his; the credential law (§7a) and the audit discipline are this repo's.
