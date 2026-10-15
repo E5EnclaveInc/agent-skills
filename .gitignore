@@ -1,0 +1,29 @@
+# Secrets & local state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+.asc_config
+credentials*.json
+*secret*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Skill runtime artifacts
+.cache/
+usage.jsonl
+*.log
+data/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
