@@ -7,10 +7,22 @@
       "category": "Agent operations"
     },
     {
+      "name": "anatomy",
+      "description": "Build crafted, highly detailed, interactive isometric SVG figures that explain a technical idea as a physical object - a test rig, a dial gauge, a cabinet of drawers, a plotter, a lock - with many small precise solid parts, four-tone shading, correct painter's order, a framed card with title, hint, and live readout, and calm eased motion. Use for isometric illustrations, explanatory diagrams for docs, articles, or landing pages, and interactive explainers, framework-free (TypeScript/JS that writes SVG and HTML) or in React/Next.js, with optional WebGL shaders inside the drawing.",
+      "path": "skills/anatomy",
+      "category": "Creative & media"
+    },
+    {
       "name": "appstore-connect",
       "description": "Use App Store Connect when working with Apple's App Store Connect API: ES256-JWT REST client for TestFlight distribution, build compliance, beta groups, testers, and external review submission.",
       "path": "skills/appstore-connect",
       "category": "Shipping & distribution"
+    },
+    {
+      "name": "ask",
+      "description": "Route an engineering situation to the right skill or flow. Use when the user is unsure which engineering skill applies or where to start.",
+      "path": "skills/ask",
+      "category": "Adapted engineering set (mattpocock/skills)"
     },
     {
       "name": "atelier-character-sheet",
@@ -73,6 +85,18 @@
       "category": "Connectors & APIs"
     },
     {
+      "name": "code-review",
+      "description": "Review a diff against its specification and repository standards, naming the evidence for acceptance. Use when checking a branch, pull request, or work in progress before acceptance.",
+      "path": "skills/code-review",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "codebase-design",
+      "description": "Design deep modules with shared vocabulary for contracts, invariants, and seams. Use when designing or restructuring a code interface, boundary, or module.",
+      "path": "skills/codebase-design",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "codemagic",
       "description": "Drive the Codemagic CI API from the command line: list apps, trigger and poll builds, and inspect build status. Use when a task involves Codemagic builds, apps, or workflows, or asks about Codemagic or its API.",
       "path": "skills/codemagic",
@@ -109,6 +133,30 @@
       "category": "Research & verification"
     },
     {
+      "name": "design-second-brain",
+      "description": "A persistent design second brain for an organization's web properties: canonical design protocols, a per-site design-language registry, a vetted technique arsenal with cost and lock-in tracking, copy standards, an ontology grounding report, and a pre-ship design gate that fails closed. Use before building or redesigning any page or producing promo collateral, and whenever a design-language decision must match the standing house style.",
+      "path": "skills/design-second-brain",
+      "category": "Creative & media"
+    },
+    {
+      "name": "diagnosing-bugs",
+      "description": "Diagnose a hard bug from a reliably failing reproduction, isolate its mechanism, and lock it down with a regression test. Use when behavior is broken, throwing, failing, or unexpectedly slow.",
+      "path": "skills/diagnosing-bugs",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "domain-modeling",
+      "description": "Build and sharpen a project domain model and glossary. Use when terminology is ambiguous, one word carries multiple meanings, or load-bearing terms need to be documented.",
+      "path": "skills/domain-modeling",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "ebony-video",
+      "description": "Produce presenter-led video assets with a cloned-voice voiceover and a broadcast-grade generated-video production line: identity-locked body generation, per-chunk pixel and listen checks, template assembly, caption safe zones, word-tail-safe trim discipline, and a human seal before publication. Use for spokesperson or presenter videos where the same on-screen persona must hold across every generated chunk.",
+      "path": "skills/ebony-video",
+      "category": "Creative & media"
+    },
+    {
       "name": "elevenlabs",
       "description": "Drive the ElevenLabs API: text-to-speech, speech-to-text, sound effects, music, voices, dubbing, and usage — with content-hash idempotency, backoff, and quota preflight built in. Use when a task involves ElevenLabs, voice generation, or its API.",
       "path": "skills/elevenlabs",
@@ -125,6 +173,18 @@
       "description": "Verify a business entity's legal and tax standing: state corporate registry lookup, IRS exempt-organization search, SAM.gov federal registration check (for-profit and nonprofit alike), NY DOS API lane, nonprofit 990 financials via ProPublica + IRS BMF, SEC EDGAR for public companies, OFAC sanctions screening, FEC political vetting, and business-mailbox sweep for filing/IRS correspondence. Produces a per-entity status dossier. Use when onboarding, auditing, vetting, or starting up any company or nonprofit.",
       "path": "skills/entity-verification",
       "category": "Research & verification"
+    },
+    {
+      "name": "eval-battery",
+      "description": "Design and run deploy-gate self-knowledge evals for AI agents: a frozen probe battery that tests whether a system accurately knows what it is, what it can do, what state it is in, and what it did — scored per tier, per critical, and per model lane, with an explicit answering doctrine, held-out probes, and a hard rule that no persona or self-model change ships without a passing re-run. Use when evaluating an agent's self-knowledge, gating a persona/system-prompt release, or comparing model lanes for duty.",
+      "path": "skills/eval-battery",
+      "category": "Research & verification"
+    },
+    {
+      "name": "fleet-atlas",
+      "description": "Map a Cloudflare-backed fleet into a typed index of workers, zones, apps, skills, and schedules; find orphans and double-builds; and run a read-only Warden sweep that answers what exists, how it connects, and whether it is healthy. Use when inventorying an estate, after adding or retiring services, or when a health verdict must distinguish a real outage from a gated, unknown, or silently-degraded surface.",
+      "path": "skills/fleet-atlas",
+      "category": "Agent operations"
     },
     {
       "name": "fleet-doctrine",
@@ -151,16 +211,70 @@
       "category": "Connectors & APIs"
     },
     {
+      "name": "google-analytics",
+      "description": "Use Google Analytics 4 when a user asks for GA4, Analytics, or measurement: onboard properties and web data streams via the Admin API, link Google Ads, wire key events, and verify data flow per stream with the Data API. Covers OAuth scope separation between the Admin and Data APIs and the scope-403 diagnosis.",
+      "path": "skills/google-analytics",
+      "category": "Business & growth"
+    },
+    {
+      "name": "grant-ops",
+      "description": "Run grant and funding-opportunity work as a continuously operating department instead of a batch chore: an event queue as the only work list, a dispatcher that drains the frontier and a closer that owns settlement, learning, and honesty accounting, watermarked recon, disqualify-first vetting against an encoded rubric, drafting only from grounded material, staged packages with explicit human gates, and firing under a standing authorization. Use when building or running a grants pipeline for any organization.",
+      "path": "skills/grant-ops",
+      "category": "Agent operations"
+    },
+    {
+      "name": "grill-me",
+      "description": "Align on an idea through a one-question-at-a-time pre-specification interview. Use when an idea is still rough and needs its user impact, assumptions, and scope clarified before commitment.",
+      "path": "skills/grill-me",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "grill-with-docs",
+      "description": "Interview a plan against project documentation and record resulting decisions. Use when a proposed plan must be checked against specs, docs, or ADRs before it becomes a specification.",
+      "path": "skills/grill-with-docs",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "grilling",
+      "description": "Run the reusable stress-test interview behind the grilling skills. Use when an idea, plan, or specification needs its blast radius, assumptions, smallest proof, and failure modes challenged.",
+      "path": "skills/grilling",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "groq",
       "description": "Call the GroqCloud API (OpenAI-compatible): list models and run chat completions at Groq speed. Use when a task involves Groq, GroqCloud, or its API.",
       "path": "skills/groq",
       "category": "Connectors & APIs"
     },
     {
+      "name": "handoff",
+      "description": "Write a session handoff that another agent or person can continue without loss. Use when pausing, transferring, or ending work that has a concrete next step.",
+      "path": "skills/handoff",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "huggingface",
       "description": "Run chat completions through Hugging Face's hosted inference router (OpenAI-compatible), including vision models via image input and SSE streaming. Use when a task needs a Hugging Face model call, an independent second-opinion model lane, or HF Inference.",
       "path": "skills/huggingface",
       "category": "Connectors & APIs"
+    },
+    {
+      "name": "implement",
+      "description": "Build a finished ticket into code test-first, following its acceptance criteria through red, green, and refactor. Use when a ticket is ready to implement.",
+      "path": "skills/implement",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "implement-spec",
+      "description": "Build an entire specification through dependency-ordered tickets, using parallel subagents where tickets are independent. Use when a whole spec is ready and should be implemented as one coordinated effort.",
+      "path": "skills/implement-spec",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "description": "Find and rank codebase refactoring targets using dependency, change-pain, and blast-radius evidence, then report them visually. Use when deciding which architecture improvements are worth doing.",
+      "path": "skills/improve-codebase-architecture",
+      "category": "Adapted engineering set (mattpocock/skills)"
     },
     {
       "name": "income-blueprint",
@@ -173,6 +287,12 @@
       "description": "Use ios-ship to get any app onto a registered iPhone with zero dashboard steps: Codemagic builds, signing groups, the verify_ipa.py ship gate, OTA install pages, and the programmatic App Store submission pipeline.",
       "path": "skills/ios-ship",
       "category": "Shipping & distribution"
+    },
+    {
+      "name": "job-application-filing",
+      "description": "File complete, truthful job applications with minimum hand-backs: verify a posting is live on the employer's own site, build a tailored resume and cover-letter package from the applicant's verified record, file through ATS portals (Workday, Greenhouse, Ashby, ADP, and others), and capture the confirmation. Use when an applicant commissions a filing run or approves a new target. Facts are never invented, and filing requires the applicant's approval.",
+      "path": "skills/job-application-filing",
+      "category": "Business & growth"
     },
     {
       "name": "lambda-cloud",
@@ -229,15 +349,33 @@
       "category": "Research & verification"
     },
     {
+      "name": "pr",
+      "description": "Shape a pull request body that lets a reviewer decide quickly. Use when preparing or revising a pull request description with the change, reason, evidence, and risks.",
+      "path": "skills/pr",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "prodigi",
       "description": "Work with the Prodigi print-on-demand API v4: products, quotes, and orders — sandbox by default, live only on request. Use when a task involves Prodigi or its print API.",
       "path": "skills/prodigi",
       "category": "Connectors & APIs"
     },
     {
+      "name": "prototype",
+      "description": "Answer a design question with the smallest throwaway program, then delete it. Use when a state model, logic choice, interface, or user experience needs evidence before committing to production code.",
+      "path": "skills/prototype",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "prototype-sprint",
       "description": "Ship the thinnest thing that proves the signal today — landing page plus signup, no database — then hand production engineering a clean handoff protocol instead of a pile of prototype. Use when speed-to-signal beats completeness. Differs from a full build by the disposable-first contract and the explicit prototype-to-production handoff.",
       "path": "skills/prototype-sprint",
+      "category": "Engineering systems"
+    },
+    {
+      "name": "public-export",
+      "description": "Export internal agent skills to a public repository without leaking anything and without breaking CI: forensic inventory first, identifier scrub battery, spec conformance, skills-ref validation, credential generalization to environment variables, single-commit pushes through the Git data API, CI-green verification after every push, and directory/discovery submissions. Use whenever publishing, open-sourcing, or updating a public skills/code repo from private sources.",
+      "path": "skills/public-export",
       "category": "Engineering systems"
     },
     {
@@ -253,6 +391,18 @@
       "category": "Research & verification"
     },
     {
+      "name": "research",
+      "description": "Investigate a question from primary sources and return a cited answer. Use when a decision needs facts from the owning documentation, code, specification, or paper rather than summaries.",
+      "path": "skills/research",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "retro",
+      "description": "Turn a completed session into concrete repository improvements. Use when a session has ended and its friction, repeated derivation, missing documentation, or missing checks should be captured and fixed.",
+      "path": "skills/retro",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "revenue-wedge",
       "description": "Design the fastest path from current assets to the first dollar: the wedge offer, its price, the named first buyer, and the payment method — on the thinnest stack that can accept payment. Use when a project must prove it can take money. Differs from revenue strategy documents by the Day-1 payable constraint: a link, not a billing system.",
       "path": "skills/revenue-wedge",
@@ -263,6 +413,90 @@
       "description": "Query SAM.gov entity registrations (UEI, CAGE, status, NAICS, socioeconomic flags) and search federal contract opportunities. Use when a task asks about SAM.gov, entity standing, or federal opportunities.",
       "path": "skills/sam-gov",
       "category": "Connectors & APIs"
+    },
+    {
+      "name": "sawdust-cinematic",
+      "description": "Take a publication's frozen text and build a cinematic, gate-passing HTML page in the Atelier Ledger register or a named design variant, styling by token-delta only and never rewording the copy. Use when a new issue or drop page needs styling from finalized text, when a variant is commissioned, or when copy-freeze, computed-contrast, and visual-evidence gates must all pass before the page is staged for approval.",
+      "path": "skills/sawdust-cinematic",
+      "category": "Creative & media"
+    },
+    {
+      "name": "scenario",
+      "description": "Use when connecting an AI agent to Scenario (scenario.com) through MCP, or when a task involves generating images, video, 3D, audio, sprites, textures, or game assets. Also when picking a Scenario model, running a LoRA, refining a generation prompt, uploading reference images, waiting on generation jobs, checking credits or quota, hitting Scenario auth, scope, or Forbidden errors, or setting up mcp.scenario.com in Claude Code, Cursor, VSCode, or another agent.",
+      "path": "skills/scenario",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scenario-consistency",
+      "description": "Use when one look must hold across Scenario generations: one character across scenes, a turnaround, or a video animated from its references, one product across angles, one style across icon sets, a character from an uploaded drawing, a variant off an approved baseline, or deciding when references stop scaling and a trained model is due. Triggers: make this match, same character, on-model, reference to video, style reference. Keywords: consistency, identity, control map, seed, LoRA.",
+      "path": "skills/scenario-consistency",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scenario-identity-library",
+      "description": "Use when a named character or prop must become a reusable identity in Scenario: creating a character or prop from a brief or interview, building its approved image collection (character: <name> or props: <name>), assembling a character sheet or turnaround, or generating new images of an established one. Triggers include create a new character, design a prop, character sheet, turnaround, more images of this character. Keywords: character design, identity, library, collection, grid.",
+      "path": "skills/scenario-identity-library",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scenario-model-training",
+      "description": "Use when generated assets must keep a consistent style, character, or product look and references stop scaling, or when a user asks to train a custom model through the Scenario MCP, fine-tune a LoRA, clone a voice, curate a training dataset, choose a base model, set epochs and sample prompts, estimate training cost, diagnose a trained model that lost its identity or has one epoch, or generate with a trained model. Keywords: custom model, LoRA, dataset curation, epoch previews.",
+      "path": "skills/scenario-model-training",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scenario-quality-gate",
+      "description": "Use when a generated Scenario image needs a quality check or a brand-brief compliance verdict before it ships: pass/warn/fail scoring, on-brand review against a configured brief, QA gating a batch, pricing or refreshing a stored verdict, or iterating a generation until it clears the gate. Keywords: quality gate, quality check, QA, verdict, brief compliance, on-brand, brand brief, pass fail, score, review, asset_quality_gate_run.",
+      "path": "skills/scenario-quality-gate",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scenario-refine-loop",
+      "description": "Use when a Scenario output must be checked and improved rather than accepted first roll: iterating a generation until it matches the brief, fixing a batch that came back off-brief, retrying failed shots methodically, wiring an automated generate-review-revise loop, or deciding whether to re-prompt, swap references, inpaint, post-process, or change model. Keywords: refine, iterate, critique, review loop, QA, self-correction, verify, acceptance criteria, retry, drift.",
+      "path": "skills/scenario-refine-loop",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scenario-storyboards",
+      "description": "Use when a story must unfold across a sequence of Scenario images: a comic page or strip, manga or webtoon panels, a children's storybook, a film, game, or ad storyboard, animatic pre-viz frames, or any shot list where the same characters and world must persist from panel to panel and dialogue must stay legible. Keywords: storyboard, comic, panel, sequential art, storybook, shot list, pre-viz, animatic, scene to scene, character consistency.",
+      "path": "skills/scenario-storyboards",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scenario-text-overlay",
+      "description": "Use when text must appear letter-perfect on generated media: taglines, CTAs, prices, legal supers, lower thirds, end cards, nameplates, or styled rich cards composited over Scenario images and video. Keywords: text overlay, text card, caption card, CTA, legal super, tagline, end card, lower third, price card, HUD text, transparent PNG.",
+      "path": "skills/scenario-text-overlay",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scenario-video-ads",
+      "description": "Use when producing a video ad with Scenario from a product shot or brand assets: a mobile 9:16 or landscape 16:9 commercial, a TikTok, Reels, Shorts, YouTube, or CTV spot, or campaign creative needing a creative brief, storyboard, cinematic camera work, brand-faithful product footage, music and voiceover, captions, ad variants, budget planning, or platform delivery specs. Keywords: video ad, commercial, product video, advert, hook, CTA, end card, campaign, ad creative.",
+      "path": "skills/scenario-video-ads",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scenario-video-assembly",
+      "description": "Use when generated clips must become a finished video on Scenario via MCP: cutting a shot list together, laying a timeline, concatenating with transitions, overlaying a logo or title card, adding a music bed or voiceover, burning in or exporting captions and subtitles, trimming and splitting, or producing vertical and square variants of one master. Keywords: edit, assemble, stitch, concat, compositor, timeline, layers, overlay, captions, SRT, ad, UGC, social cut.",
+      "path": "skills/scenario-video-assembly",
+      "category": "Scenario suite"
+    },
+    {
+      "name": "scheduled-job-discipline",
+      "description": "Author, update, and verify recurring agent jobs so they never silently run stale instructions, die on a helper's timeout, or file run logs nobody can check: scheduler source-of-truth discipline, whole-body updates, timeout budgeting across the whole call path, watermark/diff hygiene, silent-tick semantics, and honesty accounting for run logs. Use when creating or repairing any cron, scheduled worker, watch, or recurring automation.",
+      "path": "skills/scheduled-job-discipline",
+      "category": "Agent operations"
+    },
+    {
+      "name": "secret-sweep",
+      "description": "Forensically sweep a repository estate for committed secrets and PII: read-only inventory, pattern-battery content scanning, manual triage of every hit, exposure-weighted severity, posture review, honest coverage statements, and a rotate-first remediation order — plus the standing CI wiring (gitleaks CLI, not the license-gated action) and scoped-allowlist doctrine for false positives. Use when auditing repos for leaked credentials, before open-sourcing anything, or when setting up continuous secret scanning.",
+      "path": "skills/secret-sweep",
+      "category": "Research & verification"
+    },
+    {
+      "name": "setup",
+      "description": "Record a repository's conventions once so other engineering skills can operate with context. Use when onboarding a repository to these skills or when its build, test, layout, or conventions change.",
+      "path": "skills/setup",
+      "category": "Adapted engineering set (mattpocock/skills)"
     },
     {
       "name": "signal-lab-cinematic",
@@ -313,10 +547,46 @@
       "category": "Engineering systems"
     },
     {
+      "name": "tdd",
+      "description": "Apply the red-green-refactor loop with no skipped steps. Use when building a feature or fixing a bug test-first, or when a test must prove missing behavior before code exists.",
+      "path": "skills/tdd",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "teach",
+      "description": "Teach a topic through sessions that compound on what the learner already knows. Use when the user wants structured multi-session learning rather than a one-off explanation.",
+      "path": "skills/teach",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "telegram-bot",
       "description": "Operate a Telegram bot through the Bot API: verify the bot identity, send (automatically chunked) messages, and poll updates. Use when a task involves a Telegram bot, a @BotFather token, or sending Telegram messages programmatically.",
       "path": "skills/telegram-bot",
       "category": "Connectors & APIs"
+    },
+    {
+      "name": "to-questionnaire",
+      "description": "Turn open questions into a fill-in questionnaire for the person who holds the answers. Use when missing decisions or information must be gathered from someone else before work can proceed.",
+      "path": "skills/to-questionnaire",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "to-spec",
+      "description": "Turn an agreed conversation into a written specification an agent can build from. Use when discussion has settled the goal, scope, exclusions, and acceptance criteria.",
+      "path": "skills/to-spec",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "to-tickets",
+      "description": "Split a specification into small, independently buildable tickets with explicit dependencies. Use when a settled spec is ready to become an execution plan.",
+      "path": "skills/to-tickets",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
+      "name": "triage",
+      "description": "Sort raw issues into classified, owned work with a concrete next step. Use when incoming issues need reproduction, clarification, severity, classification, or assignment.",
+      "path": "skills/triage",
+      "category": "Adapted engineering set (mattpocock/skills)"
     },
     {
       "name": "typesafe-jev",
@@ -337,6 +607,12 @@
       "category": "Creative & media"
     },
     {
+      "name": "wait-what",
+      "description": "Re-explain an idea in plain English, one concept at a time and with a concrete example when needed. Use when an explanation is jargon-heavy, assumes context, or has not landed.",
+      "path": "skills/wait-what",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "war-room",
       "description": "Convene a persona-based executive committee as a deliberative institution — chartered, elected, minuted, and ratcheted. Use when a question needs structured multi-perspective deliberation with elected offices, ontology-grounded terms, scout-verified facts, and a written record that compounds into reusable persona cards. Supersedes one-off persona improv.",
       "path": "skills/war-room",
@@ -349,16 +625,34 @@
       "category": "Agent operations"
     },
     {
+      "name": "wayfinder",
+      "description": "Chart a large effort as a map of decisions and settle them in order. Use when work is too large or uncertain for one session and its blockers, options, and decision owners need mapping first.",
+      "path": "skills/wayfinder",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "web-fetch",
       "description": "Use when a subagent needs to read a public web page as markdown without the live-browser path. Fetches a URL and returns markdown (chunked reads supported). Public internet only — internal/private IPs are blocked at the connection layer by a bundled egress proxy.",
       "path": "skills/web-fetch",
       "category": "Research & verification"
     },
     {
+      "name": "wizard",
+      "description": "Create a step-by-step setup script that walks a human through actions only they can perform, verifying each stage. Use when provisioning, credential setup, migrations, or cutovers need a guided repeatable procedure.",
+      "path": "skills/wizard",
+      "category": "Adapted engineering set (mattpocock/skills)"
+    },
+    {
       "name": "writers-war-room",
       "description": "Convene a Pixar-Braintrust writers room to perfect source material into a finished multi-voice audiobook script — named seats with editorial gates, rank-choice seating, research plus leading-edge recon, ElevenLabs audiobook craft, crafted-EPUB finish. Use when a transcript or draft must become a publishable audio script.",
       "path": "skills/writers-war-room",
       "category": "Agent operations"
+    },
+    {
+      "name": "writing-for-agents",
+      "description": "Write skills and documents that agents can actually follow. Use when drafting or revising agent instructions that need specific imperatives, correct order, and explicit done-states.",
+      "path": "skills/writing-for-agents",
+      "category": "Adapted engineering set (mattpocock/skills)"
     },
     {
       "name": "zeffy",

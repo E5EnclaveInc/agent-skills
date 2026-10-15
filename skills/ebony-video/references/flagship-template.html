@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Bodoni Moda"; src: url("BodoniModa.ttf"); }
+      @font-face { font-family: "Source Serif 4"; src: url("SourceSerif4.ttf"); }
+      @font-face { font-family: "Inter"; src: url("Inter.ttf"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #0b0b0d; }
+      .gold { color: #d8b36a; }
+      .ivory { color: #f2efe6; }
+      .cap {
+        position: absolute; left: 90px; top: 1120px; width: 900px; text-align: center;
+        font-family: "Inter", sans-serif; font-weight: 800; font-size: 64px;
+        color: #ffffff; text-shadow: 0 3px 18px rgba(0,0,0,0.85), 0 1px 4px rgba(0,0,0,0.9);
+        line-height: 1.2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="13"
+         data-width="1080" data-height="1920">
+
+      <!-- ============ BODY: the creed (cold open, hook-first) ============ -->
+      <video id="a-roll" class="clip" src="body-clean.mp4" muted playsinline
+             data-start="0" data-duration="8" data-track-index="0"
+             style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></video>
+      <audio id="a-roll-audio" src="body-clean.mp4" data-start="0" data-duration="8"
+             data-track-index="6" data-volume="1"></audio>
+
+      <!-- music bed: low under voice; reads up naturally on the end card -->
+      <audio id="music" src="music-bed.mp3" data-start="0" data-duration="13"
+             data-track-index="7" data-volume="0.14"></audio>
+
+      <!-- corner bug: the seal, upper-left, network-bug treatment -->
+      <img id="bug" class="clip" src="seal-transparent.png" data-start="0" data-duration="8" data-track-index="2"
+           style="position: absolute; top: 54px; left: 48px; width: 118px; opacity: 0.72;" />
+
+      <!-- lower-third: spokesperson identity -->
+      <div id="l3" class="clip" data-start="0.9" data-duration="3.4" data-track-index="3"
+           style="position: absolute; left: 64px; top: 1438px;">
+        <div id="l3-rule" style="width: 64px; height: 3px; background: linear-gradient(90deg,#d8b36a,#f5e0a8); margin-bottom: 16px;"></div>
+        <div style="font-family: 'Bodoni Moda', serif; font-weight: 640; font-size: 52px;" class="gold">Presenter Name</div>
+        <div style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 26px; letter-spacing: 0.32em; margin-top: 10px;" class="ivory">YOUR&nbsp;ORGANIZATION</div>
+      </div>
+
+      <!-- captions: burned-in, lower-center, 2-5 words, institutional white+gold -->
+      <div class="clip cap" id="cap1" data-start="0.20" data-duration="0.95" data-track-index="4">Your opening words</div>
+      <div class="clip cap" id="cap2" data-start="1.15" data-duration="0.95" data-track-index="4">go <span class="gold">here</span>, two to five</div>
+      <div class="clip cap" id="cap3" data-start="2.10" data-duration="1.05" data-track-index="4">words per screen.</div>
+      <div class="clip cap" id="cap4" data-start="3.43" data-duration="1.00" data-track-index="4">Replace <span class="gold">each</span> caption <span class="gold">in turn.</span></div>
+      <div class="clip cap" id="cap5" data-start="4.43" data-duration="1.00" data-track-index="4">Keep the <span class="gold">safe zone.</span> Always.</div>
+      <div class="clip cap" id="cap6" data-start="5.94" data-duration="1.55" data-track-index="4">Close on <span class="gold">the line.</span></div>
+
+      <!-- ============ END CARD: 8s-13s ============ -->
+      <div id="endcard" class="clip" data-start="8" data-duration="5" data-track-index="1"
+           style="position: absolute; inset: 0; background: #0b0b0d;">
+        <div id="ec-glow" data-layout-ignore style="position:absolute; top:-280px; left:-160px;
+             width:1400px; height:1400px; border-radius:50%;
+             background: radial-gradient(circle, rgba(216,179,106,0.16) 0%, rgba(216,179,106,0.05) 40%, rgba(11,11,13,0) 70%);"></div>
+        <img id="ec-seal" src="seal-transparent.png"
+             style="position:absolute; top:330px; left:325px; width:430px;" />
+        <div id="ec-motto"
+             style="position:absolute; top:1010px; left:0; width:1080px; text-align:center;
+                    font-family:'Source Serif 4', serif; font-size:40px; letter-spacing:0.18em;
+                    font-variant: small-caps;" class="gold">
+          Your motto line here
+        </div>
+        <div id="ec-rule" style="position:absolute; top:1105px; left:480px;
+             width:120px; height:2px; background:linear-gradient(90deg, rgba(216,179,106,0), #d8b36a, rgba(216,179,106,0));"></div>
+        <div id="ec-url"
+             style="position:absolute; top:1150px; left:0; width:1080px; text-align:center;
+                    font-family:'Inter', sans-serif; font-weight:600; font-size:44px; letter-spacing:0.1em;" class="ivory">
+          example.com
+        </div>
+        <img id="ec-sig" src="signature-transparent.png"
+             style="position:absolute; top:1300px; left:345px; width:390px;" />
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // corner bug settles in
+      tl.from("#bug", { opacity: 0, duration: 0.6, ease: "power1.out" }, 0.15);
+
+      // lower-third: rule draws, text rises
+      tl.from("#l3-rule", { scaleX: 0, transformOrigin: "left center", duration: 0.45, ease: "power2.out" }, 0.95);
+      tl.from("#l3", { x: -36, opacity: 0, duration: 0.55, ease: "power2.out" }, 0.9);
+      tl.to("#l3", { opacity: 0, duration: 0.4, ease: "power1.in" }, 3.9);
+
+      // captions: quiet pop, institutional restraint
+      ["#cap1", "#cap2", "#cap3", "#cap4", "#cap5", "#cap6"].forEach((id) => {
+        const el = document.querySelector(id);
+        const start = parseFloat(el.getAttribute("data-start"));
+        tl.from(id, { y: 22, opacity: 0, duration: 0.22, ease: "power2.out" }, start);
+      });
+
+      // end card ceremony: glow breathes, seal rises, elements stagger
+      tl.from("#ec-seal", { y: 46, opacity: 0, duration: 0.9, ease: "power2.out" }, 8.15);
+      tl.from("#ec-motto", { y: 26, opacity: 0, duration: 0.7, ease: "power2.out" }, 8.7);
+      tl.from("#ec-rule", { scaleX: 0, duration: 0.5, ease: "power2.out" }, 9.1);
+      tl.from("#ec-url", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" }, 9.3);
+      tl.from("#ec-sig", { opacity: 0, duration: 0.9, ease: "power1.out" }, 9.7);
+      tl.to("#ec-glow", { scale: 1.12, duration: 3.4, ease: "sine.inOut" }, 8.6);
+      // gentle fade to black at the close
+      tl.to("#endcard", { opacity: 0, duration: 0.6, ease: "power1.in" }, 12.4);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

@@ -5,6 +5,35 @@ All notable changes to this repository are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-10-15
+
+### Added
+
+- **Wave 3 — 49 new skills (111 total).**
+  - Scenario suite (10): `scenario`, `scenario-consistency`,
+    `scenario-identity-library`, `scenario-model-training`,
+    `scenario-quality-gate`, `scenario-refine-loop`, `scenario-storyboards`,
+    `scenario-text-overlay`, `scenario-video-ads`, `scenario-video-assembly` —
+    the full Scenario MCP creative pipeline: generation, consistency,
+    identities, model training, quality gates, refinement, storyboards,
+    text overlay, video ads, and assembly.
+  - Creative & design: `design-second-brain`, `sawdust-cinematic`,
+    `ebony-video`, `anatomy` (interactive isometric SVG explainers).
+  - Operations & analytics: `fleet-atlas`, `google-analytics`,
+    `job-application-filing` (method only — ships with a blank
+    canonical-answers template).
+  - Newly authored: `scheduled-job-discipline`, `grant-ops`,
+    `eval-battery`, `secret-sweep`, `public-export`.
+  - **Adapted engineering set (27)** — `ask`, `code-review`,
+    `codebase-design`, `diagnosing-bugs`, `domain-modeling`, `grill-me`,
+    `grill-with-docs`, `grilling`, `handoff`, `implement`, `implement-spec`,
+    `improve-codebase-architecture`, `pr`, `prototype`, `research`, `retro`,
+    `setup`, `tdd`, `teach`, `to-questionnaire`, `to-spec`, `to-tickets`,
+    `triage`, `wait-what`, `wayfinder`, `wizard`, `writing-for-agents`.
+    Adapted from [mattpocock/skills](https://github.com/mattpocock/skills)
+    (MIT) — upstream is canonical; each skill carries its attribution and the
+    upstream license. See `skills/<name>/LICENSE`.
+
 ## [0.2.0] - 2026-10-15
 
 ### Added
