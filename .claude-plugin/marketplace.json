@@ -10,7 +10,7 @@
   "plugins": [
     {
       "category": "productivity",
-      "description": "The full set \u2014 62 production skills for agent operations, research & verification, engineering systems, business & growth, creative media, shipping, and API connectors.",
+      "description": "The full set \u2014 111 production skills for agent operations, research & verification, engineering systems, business & growth, creative media, shipping, and API connectors.",
       "license": "MIT",
       "name": "production-skills",
       "skills": [
