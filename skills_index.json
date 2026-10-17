@@ -181,6 +181,12 @@
       "category": "Research & verification"
     },
     {
+      "name": "first-orchestration",
+      "description": "Run a new principal's first orchestration: a forensic review of an imported agent-skills library, a seated war room that charters the agent as chief of staff, read-only email/calendar recon plus fresh world recon, and SMART-goal setup with a standing triage routine. Agent-only and accessibility-first: the principal answers one short question at a time while the agent does all the work. Use when a user who is new to agents adopts a skills library and asks the agent to become their chief of staff, set itself up, or run its first onboarding. Differs from chief-of-staff (the standing routine this creates) and from war-room (one deliberation) by being the one-time sequence that produces both.",
+      "path": "skills/first-orchestration",
+      "category": "Agent operations"
+    },
+    {
       "name": "fleet-atlas",
       "description": "Map a Cloudflare-backed fleet into a typed index of workers, zones, apps, skills, and schedules; find orphans and double-builds; and run a read-only Warden sweep that answers what exists, how it connects, and whether it is healthy. Use when inventorying an estate, after adding or retiring services, or when a health verdict must distinguish a real outage from a gated, unknown, or silently-degraded surface.",
       "path": "skills/fleet-atlas",

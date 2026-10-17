@@ -23,6 +23,7 @@ END = "<!-- END SKILLS INDEX -->"
 
 CATEGORIES = [
     ("Agent operations", [
+        "first-orchestration",
         "subagent-security-brief", "chief-of-staff", "agent-spawner",
         "war-room", "war-room-doctrine", "fleet-doctrine",
         "board-of-thirteen", "writers-war-room",

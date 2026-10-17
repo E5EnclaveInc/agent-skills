@@ -5,6 +5,20 @@ All notable changes to this repository are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-10-17
+
+### Added
+
+- **`first-orchestration`** (112 total) — the designated first skill for
+  newcomers adopting this library: a one-time onboarding sequence that runs
+  a forensic review of the imported library (Adopt / Adapt / Park), convenes
+  a war room to charter the agent as chief of staff, performs read-only
+  email/calendar recon plus fresh world recon (unknown unknowns included),
+  and stands up SMART goals with the standing `chief-of-staff` routine.
+  Agent-only and accessibility-first by design: one question at a time,
+  one-word answers, digest-first reporting, money/sends/publishing staged
+  for approval.
+
 ## [0.3.0] - 2026-10-15
 
 ### Added

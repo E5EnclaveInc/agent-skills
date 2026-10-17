@@ -1,7 +1,7 @@
 {
   "metadata": {
     "description": "Production agent skills from E5 Enclave Inc.: agent operations, research & verification, engineering, growth, creative media, shipping, and 19 API connector skills.",
-    "version": "0.3.0"
+    "version": "0.4.0"
   },
   "name": "agent-skills",
   "owner": {
@@ -10,7 +10,7 @@
   "plugins": [
     {
       "category": "productivity",
-      "description": "The full set \u2014 111 production skills for agent operations, research & verification, engineering systems, business & growth, creative media, shipping, and API connectors.",
+      "description": "The full set — 112 production skills for agent operations, research & verification, engineering systems, business & growth, creative media, shipping, and API connectors.",
       "license": "MIT",
       "name": "production-skills",
       "skills": [
@@ -44,6 +44,7 @@
         "./skills/eng-discipline",
         "./skills/entity-verification",
         "./skills/eval-battery",
+        "./skills/first-orchestration",
         "./skills/fleet-atlas",
         "./skills/fleet-doctrine",
         "./skills/fred",
